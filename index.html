@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Survey Form</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Dolphination Survey Form</h1>
+  <p id="description">Thank you for taking the time to help me improve the stream!</p>
+  <section>
+  <form id="survey-form" action="https://api.sheetmonkey.io/form/qpZnhPyeGHhvx6jVPK84Jw" method="POST">
+  <label id="name-label" class="spaced">Username:
+    <input id="name" name="name" type="text" required placeholder="Enter your name"></input>
+  </label>
+  <label id="email-label" class="spaced">Email:
+    <input id="email" name="email" type="email" required placeholder="Enter your email"></input>
+  </label>
+  <label id="number-label" class="spaced">Age:
+    <input id="number" name="age" type="number" min="12" max="100" placeholder="Enter your age">
+  </input>
+  </label>
+  <label class="spaced">How would you describe your participation in the stream?
+  <select id="dropdown" name="participation" >
+    <option>Select one</option>
+    <option>Regular</option>
+    <option>Occasional</option>
+  </select>
+  </label>
+  <fieldset>What is your user status?
+  <label>
+    <input name="account-type" value="sub" id="sub" type="radio" class="inline">Subscribed
+  </label>
+  <label>
+    <input name="account-type" value="non-sub" id="non-sub" type="radio" class="inline">Not Subscribed
+  </label>
+  </fieldset>
+ <fieldset>What games do you prefer watching?
+  <label>
+    <input value="story" name="games" id="story" type="checkbox" class="inline">Story Games
+  </label>
+  <label>
+    <input value="dbd" name="games" id="dbd" type="checkbox" class="inline">Dead by Daylight</label>
+    <label>
+    <input value="evil-dead" name="games" id="evil-dead" type="checkbox" class="inline">Evil Dead
+  </label>
+  <label>
+    <input value="overwatch" name="games" id="overwatch" type="checkbox" class="inline">Overwatch 2
+  </label>
+  </fieldset>
+  <label id="additional-info-label" class="spaced">Any comments or suggestions?
+  <textarea id="additional-info" name="additional-info"
+  rows=3 placeholder="Insert Additional Suggestions Here"></textarea>
+  </label>
+  <input type="submit" class="spaced" id="submit"  value="Submit"/>
+</form>
+</section>
+
+</body>
+</html>
